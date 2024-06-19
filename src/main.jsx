@@ -9,6 +9,9 @@ const colors = {
     800: "#153e75",
     700: "#2a69ac",
   },
+  background: {
+    100: "#fff1e5", // Original background color of the Financial Times website
+  },
 };
 
 const theme = extendTheme({ colors });
@@ -20,3 +23,5 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     </ChakraProvider>
   </React.StrictMode>
 );
+
+document.body.style.backgroundColor = colors.background[100];
